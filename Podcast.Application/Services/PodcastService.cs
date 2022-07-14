@@ -19,11 +19,16 @@ namespace Podcast.Application.Services
             _podcastRepository = podcastRepository;
         }
 
-        public IEnumerable<PodcastModel> GetAll(PodcastFilterModel filterModel, Pagination pagination)
+        public IEnumerable<PodcastModel> GetAll()
+        {
+            return _mapper.Map<IEnumerable<PodcastModel>>(_podcastRepository.GetAll());
+        }
+
+        public IEnumerable<PodcastModel> Get(PodcastFilterModel filterModel, Pagination pagination)
         {
             var filter = _mapper.Map<PodcastFilter>(filterModel);
 
-            return _mapper.Map<IEnumerable<PodcastModel>>(_podcastRepository.GetAll(filter, pagination));
+            return _mapper.Map<IEnumerable<PodcastModel>>(_podcastRepository.Get(filter, pagination));
         }
 
         public int Count(PodcastFilterModel filterModel)

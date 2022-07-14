@@ -5,7 +5,8 @@ namespace Podcast.Domain.Interfaces
 {
     public interface IPodcastRepository
     {
-       IEnumerable<PodcastEntity> GetAll(PodcastFilter filter, Pagination pagination);
-       int Count(PodcastFilter filter);
+        IEnumerable<PodcastEntity> GetAll();
+        IEnumerable<PodcastEntity> Get(PodcastFilter filter, Pagination pagination);
+        int Count(PodcastFilter filter);
     }
 }

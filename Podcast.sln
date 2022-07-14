@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podcast.Infra.CrossCutting.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Podcast.Infra.CrossCutting.Support", "Podcast.Infra.CrossCutting.Support\Podcast.Infra.CrossCutting.Support.csproj", "{E06AC066-FFF4-4392-A94D-D68ACA388B14}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Podcast.Tests", "Podcast.Tests\Podcast.Tests.csproj", "{CBF750B5-73CF-49AE-9544-E3B6B047E6B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E06AC066-FFF4-4392-A94D-D68ACA388B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E06AC066-FFF4-4392-A94D-D68ACA388B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E06AC066-FFF4-4392-A94D-D68ACA388B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF750B5-73CF-49AE-9544-E3B6B047E6B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF750B5-73CF-49AE-9544-E3B6B047E6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF750B5-73CF-49AE-9544-E3B6B047E6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF750B5-73CF-49AE-9544-E3B6B047E6B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

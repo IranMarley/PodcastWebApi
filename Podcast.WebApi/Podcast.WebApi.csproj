@@ -9,12 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="Configurations\Podcasts.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="wwwroot\Podcasts.json" />
-  </ItemGroup>
+    <None Include="wwwroot\**">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+</ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />

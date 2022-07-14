@@ -5,7 +5,8 @@ namespace Podcast.Application.Interfaces
 {
     public interface IPodcastService : IDisposable
     {
-        IEnumerable<PodcastModel> GetAll(PodcastFilterModel filter, Pagination pagination);
+        IEnumerable<PodcastModel> GetAll();
+        IEnumerable<PodcastModel> Get(PodcastFilterModel filter, Pagination pagination);
         int Count(PodcastFilterModel filter);
     }
 }

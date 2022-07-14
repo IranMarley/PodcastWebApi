@@ -13,8 +13,13 @@ namespace Podcast.Infra.Data.Repository
         {
             _context = context;
         }
+        public IEnumerable<PodcastEntity> GetAll()
+        {
+            //Simulates database access
+            return _context.LoadPodcasts().ToList();
+        }
 
-        public IEnumerable<PodcastEntity> GetAll(PodcastFilter filter, Pagination pagination)
+        public IEnumerable<PodcastEntity> Get(PodcastFilter filter, Pagination pagination)
         {
             //Simulates database access
             var podcasts = _context.LoadPodcasts();

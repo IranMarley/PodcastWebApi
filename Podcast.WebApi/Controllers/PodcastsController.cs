@@ -28,7 +28,7 @@ namespace Podcast.WebApi.Controllers
             _pagination.Page = filter.Page;
             _pagination.Size = filter.Size;
 
-            var model = _podcastService.GetAll(filter, _pagination);
+            var model = _podcastService.Get(filter, _pagination);
             var pagination = _pagination.CalcPagination(_pagination, _podcastService.Count(filter));
 
             return Ok(new PagedResponseModel<IEnumerable<PodcastModel>>(model, pagination.Page, pagination.Size, pagination.TotalPages, pagination.TotalRecords));
